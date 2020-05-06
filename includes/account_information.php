@@ -20,9 +20,11 @@ if(!empty($_GET['username'])){
     $skill_cooking = $skills[8];
     $skill_woodcutting = $skills[9];
     $skill_fletching = $skills[10];
+    $skill_fishing = $skills[11];
     $skill_firemaking = $skills[12];
     $skill_crafting = $skills[13];
     $skill_smithing = $skills[14];
+    $skill_mining = $skills[15];
     $skill_herblore = $skills[16];
     $skill_agility = $skills[17];
     $skill_thieving = $skills[18];
@@ -43,9 +45,11 @@ if(!empty($_GET['username'])){
     $skill_cooking_attributes = explode(",",$skill_cooking);
     $skill_woodcutting_attributes = explode(",",$skill_woodcutting);
     $skill_fletching_attributes = explode(",",$skill_fletching);
+    $skill_fishing_attributes = explode(",",$skill_fishing);
     $skill_firemaking_attributes = explode(",",$skill_firemaking);
     $skill_crafting_attributes = explode(",",$skill_crafting);
     $skill_smithing_attributes = explode(",",$skill_smithing);
+    $skill_mining_attributes = explode(",",$skill_mining);
     $skill_herblore_attributes = explode(",",$skill_herblore);
     $skill_agility_attributes = explode(",",$skill_agility);
     $skill_thieving_attributes = explode(",",$skill_thieving);
