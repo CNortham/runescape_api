@@ -1,5 +1,5 @@
 <?php
-//error_reporting(0);
+
 $account_result = 0;
 
 if(!empty($_GET['username'])){

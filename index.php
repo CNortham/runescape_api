@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 include("includes/account_information.php");
 include("includes/quest_requirements.php");
 include("includes/errors.php");
@@ -6,6 +7,9 @@ include("includes/errors.php");
 <html>
     <head>
     <title>Runescape API</title>
+    
+    <script src="js/vue.js"></script>
+    <script src="js/jquery.js"></script>
     </head>
     <body>
 
@@ -15,13 +19,14 @@ include("includes/errors.php");
             <div class="row" id="search">
                 <div class="col-lg-6 mx-auto">
                     <h1 <?php echo ($account_result == 1 ? "hidden" : ""); ?>>Please Enter Username</h1>
-                    <h1 <?php echo ($account_found == 1 ? "hidden" : ""); ?>>Account Not Found</h1>
-                <div class="input-group">
-                    <input type="text" class="form-control" name="username" value="<?php echo $_GET['username']; ?>">
-                    <span class="input-group-btn">
-                    <input class="btn btn-secondary" type="submit" value="Search">
-                    </span>
-                </div>
+                    <h1 <?php echo (empty($_POST) || $account_found == 1 ? "hidden" : ""); ?>>Account Not Found</h1>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="username" value="<?php echo $_GET['username']; ?>">
+                        <span class="input-group-btn">
+                        <input class="btn btn-secondary" type="submit" value="Search">
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,7 +63,7 @@ include("includes/errors.php");
             <div class="col-sm">
             <!--Strength-->
                 <img class="icons" src="img/skill_icons/Strength_icon.png" alt="Strength"> 
-                <?php echo $skill_strength_attributes[1]; ?>
+                <?php echo $skill_strength_attributes[1]; ?> 
             </div>
             <div class="col-sm">
             <!--Agility-->
@@ -172,7 +177,38 @@ include("includes/errors.php");
             </div>
         </div>
     </div>
+
+    <!---->
+    <div class="container" id="options">
+            <div class="row">
+            <div class="col-lg-6">
+                    <button v-on:click='questClick'>Quests</button>
+                </div>
+                <div class="col-lg-6">
+                    <button v-on:click='skillcalClick'>Skills Calculator</button>
+                </div>
+            </div>
+        </div>
+
+    <script>
+        new Vue({
+            el: '#options',
+            data: {
+                message: 'Hello'
+            },
+            methods: {
+                questClick: function(){
+
+                },
+                skillcalClick: function(){
+
+                }
+            }
+        })
+    </script>
+
     </body>
+
 
 
 
