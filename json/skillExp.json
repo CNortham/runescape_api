@@ -1,0 +1,94 @@
+{
+    "agility": [
+        {
+            "name": "Gnome Stronghold",
+            "req": 1,
+            "skill": "agility",
+            "exp": 87
+        },
+        {
+            "name": "Draynor Village Rooftop",
+            "req": 10,
+            "skill": "agility",
+            "exp": 120
+        },
+        {
+            "name": "Al Kharid Rooftop",
+            "req": 20,
+            "skill": "agility",
+            "exp": 180
+        },
+        {
+            "name": "Varrock Rooftop",
+            "req": 30,
+            "skill": "agility",
+            "exp": 238
+        },
+        {
+            "name": "Penguin",
+            "req": 30,
+            "skill": "agility",
+            "exp": 540
+        },
+        {
+            "name": "Barbarian Outpost",
+            "req": 35,
+            "skill": "agility",
+            "exp": 153
+        },
+        {
+            "name": "Canifis Rooftop",
+            "req": 40,
+            "skill": "agility",
+            "exp": 120
+        },
+        {
+            "name": "Ape Atoll",
+            "req": 48,
+            "skill": "agility",
+            "exp": 580
+        },
+        {
+            "name": "Falador Rooftop",
+            "req": 50,
+            "skill": "agility",
+            "exp": 440
+        },
+        {
+            "name": "Wilderness",
+            "req": 52,
+            "skill": "agility",
+            "exp": 571
+        },
+        {
+            "name": "Seers' Village Rooftop",
+            "req": 60,
+            "skill": "agility",
+            "exp": 570
+        },
+        {
+            "name": "Werewolf",
+            "req": 60,
+            "skill": "agility",
+            "exp": 730
+        },
+        {
+            "name": "Pollnivneach Rooftop",
+            "req": 70,
+            "skill": "agility",
+            "exp": 890
+        },
+        {
+            "name": "Rellekka Rooftop",
+            "req": 80,
+            "skill": "agility",
+            "exp": 780
+        },
+        {
+            "name": "Ardougne Rooftop",
+            "req": 90,
+            "skill": "agility",
+            "exp": 793
+        }
+    ]
+}

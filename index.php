@@ -1,8 +1,9 @@
 <?php
-error_reporting(0);
+//error_reporting(0);
 include("includes/account_information.php");
-include("includes/quest_requirements.php");
 include("includes/errors.php");
+include("includes/logic.php");
+//var_dump($_POST);
 ?>
 <html>
     <head>
@@ -19,7 +20,7 @@ include("includes/errors.php");
             <div class="row" id="search">
                 <div class="col-lg-6 mx-auto">
                     <h1 <?php echo ($account_result == 1 ? "hidden" : ""); ?>>Please Enter Username</h1>
-                    <h1 <?php echo (empty($_POST) || $account_found == 1 ? "hidden" : ""); ?>>Account Not Found</h1>
+                    <h1 <?php echo $show; ?>>Account Not Found</h1>
 
                     <div class="input-group">
                         <input type="text" class="form-control" name="username" value="<?php echo $_GET['username']; ?>">
@@ -39,7 +40,7 @@ include("includes/errors.php");
                 <!--Overall-->
                 <img class="icons" src="img/skill_icons/Overall_icon.png" alt="Overall"> 
                 <?php echo $skill_overall_attributes[1]; ?> 
-
+                <input class="skillsCal" type="radio" name="skills" id="overall">
             </div>
         </div>
         <div class="row">
@@ -68,7 +69,8 @@ include("includes/errors.php");
             <div class="col-sm">
             <!--Agility-->
                 <img class="icons" src="img/skill_icons/Agility_icon.png" alt="Agility"> 
-                <?php echo $skill_agility_attributes[1]; ?>
+                <?php echo $skill_agility_attributes[1]; ?> 
+                <input class="skillsCal" type="radio" name="skills" id="agility">
             </div>
             <div class="col-sm">
             <!--Smithing-->
@@ -178,18 +180,37 @@ include("includes/errors.php");
         </div>
     </div>
 
-    <!---->
+    <!--Buttons-->
     <div class="container" id="options">
-            <div class="row">
+        <div class="row">
             <div class="col-lg-6">
-                    <button v-on:click='questClick'>Quests</button>
-                </div>
-                <div class="col-lg-6">
-                    <button v-on:click='skillcalClick'>Skills Calculator</button>
+                <button v-on:click='questClick'>Quests</button>
+            </div>
+            <div class="col-lg-6">
+                <button v-on:click='skillcalClick'>Skills Calculator</button>
+            </div>
+        </div>
+    </div>
+
+    <div <?php echo ($account_found == 1 ? "" : "hidden"); ?>>
+        <!--Quests-->
+        <div class="container" id="quests">
+            <div class="row">
+                <div class="col-lg-12">
+                    QUESTS
                 </div>
             </div>
         </div>
 
+        <!--Skills Calculator-->
+        <div class="container" id="skillsCal">
+            <div class="row">
+                <div class="col-lg-12">
+                    SKILLSCAL
+                </div>
+            </div>
+        </div>
+    <div>
     <script>
         new Vue({
             el: '#options',
@@ -198,10 +219,29 @@ include("includes/errors.php");
             },
             methods: {
                 questClick: function(){
+                    var quests = document.getElementById("quests");
+                    var skillsCal = document.getElementById("skillsCal");
 
+                    if (quests.style.display === "block") {
+                        quests.style.display = "none";
+                    } else {
+                        skillsCal.style.display = "none";
+                        quests.style.display = "block";
+                    }
                 },
                 skillcalClick: function(){
+                    var quests = document.getElementById("quests");
+                    var skillsCal = document.getElementById("skillsCal");
+                    var skillsCal_skills = document.getElementsByName("skills");
 
+                    if (skillsCal.style.display === "block") {
+                        skillsCal.style.display = "none";
+                        skillsCal_skills.style.display = "none";
+                    } else {
+                        quests.style.display = "none";
+                        skillsCal.style.display = "block";
+                        skillsCal_skills.style.display = "block";
+                    }
                 }
             }
         })
