@@ -15,3 +15,9 @@ body {
     display: none;
 }
 
+.skillsC {
+    display: none;
+    position: absolute;
+    top: 11px;
+    left: 220px;
+}
