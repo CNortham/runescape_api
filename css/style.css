@@ -21,3 +21,24 @@ body {
     top: 11px;
     left: 220px;
 }
+
+.calculators {
+    display: none;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 20px;
+}
+
+#agility_to_nine_nine{
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+#agil_des_level{
+    max-width: 60px;
+}
+
+#agility_to_next{
+    max-height: 400px;
+    overflow-y: scroll;
+}

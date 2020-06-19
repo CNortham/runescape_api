@@ -4,91 +4,113 @@
             "name": "Gnome Stronghold",
             "req": 1,
             "skill": "agility",
-            "exp": 87
+            "exp": 87,
+            "time": 34
         },
         {
             "name": "Draynor Village Rooftop",
             "req": 10,
             "skill": "agility",
-            "exp": 120
+            "exp": 120,
+            "time": 44
         },
         {
             "name": "Al Kharid Rooftop",
             "req": 20,
             "skill": "agility",
-            "exp": 180
+            "exp": 180,
+            "time": 64
         },
         {
             "name": "Varrock Rooftop",
             "req": 30,
             "skill": "agility",
-            "exp": 238
+            "exp": 238,
+            "time": 65
         },
         {
             "name": "Penguin",
             "req": 30,
             "skill": "agility",
-            "exp": 540
+            "exp": 540,
+            "time": 61
         },
         {
             "name": "Barbarian Outpost",
             "req": 35,
             "skill": "agility",
-            "exp": 153
+            "exp": 153,
+            "time": 32
         },
         {
             "name": "Canifis Rooftop",
             "req": 40,
             "skill": "agility",
-            "exp": 120
+            "exp": 120,
+            "time": 44
         },
         {
             "name": "Ape Atoll",
             "req": 48,
             "skill": "agility",
-            "exp": 580
+            "exp": 580,
+            "time": 39
         },
         {
             "name": "Falador Rooftop",
             "req": 50,
             "skill": "agility",
-            "exp": 440
+            "exp": 440,
+            "time": 59
         },
         {
             "name": "Wilderness",
             "req": 52,
             "skill": "agility",
-            "exp": 571
+            "exp": 571,
+            "time": 35
         },
         {
             "name": "Seers' Village Rooftop",
             "req": 60,
             "skill": "agility",
-            "exp": 570
+            "exp": 570,
+            "time": 44
+        },
+        {
+            "name": "Seers' Village Rooftop *Hard Diary Completed",
+            "req": 60,
+            "skill": "agility",
+            "exp": 570,
+            "time": 35
         },
         {
             "name": "Werewolf",
             "req": 60,
             "skill": "agility",
-            "exp": 730
+            "exp": 730,
+            "time": 38
         },
         {
             "name": "Pollnivneach Rooftop",
             "req": 70,
             "skill": "agility",
-            "exp": 890
+            "exp": 890,
+            "time": 61
         },
         {
             "name": "Rellekka Rooftop",
             "req": 80,
             "skill": "agility",
-            "exp": 780
+            "exp": 780,
+            "time": 51
         },
         {
             "name": "Ardougne Rooftop",
             "req": 90,
             "skill": "agility",
-            "exp": 793
+            "exp": 793,
+            "time": 46
         }
     ]
 }

@@ -3,7 +3,6 @@ include("includes/errors.php");
 include("includes/skills.php");
 
 //Account Not Found//
-
 if($account_found == 1){
     $show = "hidden";
     //echo "Account Found";
@@ -20,5 +19,5 @@ if($account_found == 1){
     //echo "Account Not Found";
 }
 
-//echo $skills['agility'][0]["name"];
+
 ?>
